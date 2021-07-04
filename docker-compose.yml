@@ -2,7 +2,11 @@ version: '3'
 services:
     dev:
         container_name: dev
-        build: .
+        build:
+            context: .
+            args: 
+                - UID=${UID}
+                - GID=${GID}
         tty: true
         volumes: 
             - ./src:/go/src
