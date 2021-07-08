@@ -13,5 +13,5 @@ docker-compose build
 
 docker-compose up -d
 
-docker-compose exec dev /bin/sh
+docker-compose exec go /bin/sh
 ```
